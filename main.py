@@ -17,8 +17,7 @@ for i in range(100):  # Increase the number of frames captured
         background_frames.append(np.flip(background, axis=1))  # Flip the background frame horizontally
 background = np.median(background_frames, axis=0).astype(np.uint8)  # Use median to reduce noise
 
-print("Background captured. You can now use the cloak!")
-
+print("Background captured. You can now use the cloak! Paesh kiyaaaa jaaye")
 while cap.isOpened():
     ret, frame = cap.read()
     if not ret:
